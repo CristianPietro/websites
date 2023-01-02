@@ -142,7 +142,63 @@ body{
 \*-----------------------------------*/
 .container{ padding-inline: 16px; }
 
+.shape{ display: none; }
 
+.title{
+  font-family: var(--fontFamily-clashDisplay);
+  font-weight: var(--weight-semiBold);
+}
+
+.h1{ font-size: var(--fontSize-2); }
+
+.h2{ font-size: var(--fontSize-3); }
+
+.h3{ font-size: var(--fontSize-5); }
+
+.h4{ font-size: var(--fontSize-6); }
+
+.btn{
+  background-color: var(--bg-white);
+  display: flex;
+  align-items: center;
+  max-width: max-content;
+  min-width: min-content;
+  padding: 15px 30px;
+  border: 2px solid var(--border-eerie-black);
+  box-shadow: var(--shadow-2);
+  font-weight: var(--weight-semiBold);
+  transition: var(--transition-1);
+}
+
+
+.btn:is( :hover, :focus-visible) { box-shadow: none; }
+
+.btn-primary,
+.btn-secondary{
+  gap: 5px;
+  text-transform: uppercase;
+}
+
+:is(.btn-primary, .btn-secondary) ion-icon{
+  font-size: 2rem;
+  transform: rotate(-45deg);
+}
+
+.btn-primary:is(:hover, :focus-visible){ color: var(--text-orange-crayola); }
+
+.btn-secondary{ background-color: var(--bg-orange-crayola);}
+
+.img-holder{
+  aspect-ratio: var(--width) / var(--height);
+  background-color: var(--bg-gainsboro);
+  overflow: hidden;
+}
+
+.img-cover{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 
 /*-----------------------------------*\
@@ -212,8 +268,31 @@ body{
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
+.hero{
+  background-color: var(--bg-wild-blue-yonder);
+  padding-block: 130px 75px;
+}
 
+.hero .container{
+  display: grid;
+  gap: 50px;
 
+}
+
+.hero-subtitle{ font-size: var(--fontSize-4); }
+
+.hero-title{ margin-block: 16px 30px; }
+
+.hero-text{
+  font-size: var(--fontSize-8);
+  line-height: 2.1;
+  margin-block-end: 16px;
+}
+
+.hero-banner{
+  max-width: max-content;
+  margin-inline: auto;
+}
 
 
 
