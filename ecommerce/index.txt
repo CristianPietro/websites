@@ -45,8 +45,8 @@ Explore new arrivals
 
 alt = Short Sleeve Shirt
 
-<ion-icon name="bag" aria-hidden="true"></ion-icon>
 Add To Cart
+<ion-icon name="bag" aria-hidden="true"></ion-icon>
 
 Short Sleeve Shirt
 $170.00
