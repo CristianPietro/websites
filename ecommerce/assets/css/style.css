@@ -55,6 +55,7 @@
   --fontSize-8: 1.8rem;
   --fontSize-9: 1.4rem;
   --fontSize-10: 2.4rem;
+  --fontSize-11: 1.3rem;
 
   /*font weight*/
   --weight-semiBold: 600;
@@ -150,7 +151,10 @@ body{
 \*-----------------------------------*/
 .container{ padding-inline: 16px; }
 
-.shape{ display: none; }
+.shape{
+  display: none;
+  position: absolute;
+}
 
 .title{
   font-family: var(--fontFamily-clashDisplay);
@@ -494,6 +498,11 @@ address.footer-text{ margin-block-end: 15px; }
   text-align: center;
 }
 
+.footer .shape-1{
+  display: block;
+  top: 0;
+  right: 0;
+}
 
 
 /*-----------------------------------*\
